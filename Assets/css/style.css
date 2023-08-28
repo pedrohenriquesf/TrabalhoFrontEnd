@@ -1,3 +1,14 @@
 body{
     background-color: #681abb;
 }
+
+.caixa{
+
+
+    width: 488px; 
+    height: 455px;
+    top: 121px; 
+    left: 293px; 
+    border-radius: 15px #737373; 
+    border: 1px #737373;
+}
