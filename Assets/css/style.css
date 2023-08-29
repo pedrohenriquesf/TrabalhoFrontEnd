@@ -1,14 +1,55 @@
-body{
-    background-color: #681abb;
-}
+body {
+    font-family: "Averia Libre", sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #372775;
+  }
 
-.caixa{
-
-
-    width: 488px; 
+  .login-container {
+    background-color: #372775;
+    border: 1px solid #737373;
+    border-radius: 15px;
+    padding: 20px;
+    width: 488px;
     height: 455px;
-    top: 121px; 
-    left: 293px; 
-    border-radius: 15px #737373; 
-    border: 1px #737373;
-}
+  }
+
+  .login-container h2 {
+    margin-bottom: 20px;
+    color:#fff; 
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    width: 126px;
+    height: 29;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+
+  .form-group input {
+    width: 424px;
+    height: 39px;
+    top: 261px;
+    left: 327px;
+    border: 1px solid #ccc;
+  }
+
+  .form-group button {
+    background-color: #49B976;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 134px;
+    height: 40px;
+  }
