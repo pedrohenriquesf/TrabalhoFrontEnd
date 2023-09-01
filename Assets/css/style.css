@@ -24,8 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
-
+    align-items: center;
   }
 
   .form-group {
@@ -53,8 +52,9 @@ body {
     color: #fff;
     border: none;
     border-radius: 10px;
-    padding: 10px 15px;
+    margin-top: 120px;
     cursor: pointer;
     width: 134px;
     height: 40px;
+    float: right;
   }
