@@ -28,6 +28,7 @@ body {
   }
 
   .form-group {
+    width: 100%;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
