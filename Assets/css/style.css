@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
+    
   }
 
   .form-group label {
@@ -60,7 +60,11 @@ body {
     color:#3F92C5;
     text-align: right;
     margin-left: auto;
-    
+  }
+
+  .form-group span {
+    text-decoration: underline;
+    color: #FD7979;
   }
 
   
