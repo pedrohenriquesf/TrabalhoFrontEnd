@@ -18,7 +18,7 @@ body {
     height: 455px;
   }
 
-  .login-container h1 {
+  .login-container h2 {
     margin-bottom: 20px;
     color:#fff; 
     display: flex;
@@ -55,7 +55,17 @@ body {
     
   }
 
+  .form-group a {
+    text-decoration: none;
+    color:#3F92C5;
+    text-align: right;
+    margin-left: auto;
+    
+  }
+
+  
   .form-group button {
+    font-family: "Averia Libre", sans-serif;
     background-color: #49B976;
     color: #fff;
     border: none;
@@ -66,5 +76,6 @@ body {
     width: 134px;
     height: 40px;
     float: right;
+    font-size: 18px;
   }
   
