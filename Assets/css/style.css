@@ -63,8 +63,9 @@ body {
   }
 
   .form-group span {
-    text-decoration: underline;
+    
     color: #FD7979;
+
   }
 
   
@@ -82,5 +83,6 @@ body {
     float: right;
     font-size: 18px;
   }
-  
+     
+
   
