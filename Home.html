@@ -1,46 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            #roothome{
-            background-color: #372775;
-            height: 700px ;          
-             }
-             .boxhome{
-                display: flex;
-                background-color: pink;
-            }
-
-            #pesquisa{
-            background-color:white;
-            border-inline-start: #372775;
-            border:solid 150px;
-            
-            width:80%;
-            }
-
-            #txtBusca{
-            float:left;
-            background-color:transparent;
-            padding-left:200px;
-            font-style:italic;
-            font-size:18px;
-            border:none;
-            height:32px;
-            width:260px;
-            }
-
-        </style>
-
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/home.css" >
+        <title>Home</title>
     </head>
 
     <body>
-        <div id="roothome">
-            <div id="pesquisa" class="boxhome" style="height: 20%">
-                <input type="text" id="txtBusca" placeholder="Insira o termo de busca"/>
+        <div class="roothome">
+            <button type="submit" class="button">Nova Pesquisa</button>
+
+            <div id="pesquisa" class="boxhome" style="height: 25%">
+                
+                <input type="search" id="pesquisa" placeholder="Insira o termo de busca"/>
+            
             </div>
 
-            <div class="boxhome" style="height: 80%; background-color:red" >
+            <div class="boxhome" style="height: 90%; background-color:#372775" >
                 <div>
 
                 </div>
