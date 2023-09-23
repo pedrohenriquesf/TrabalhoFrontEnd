@@ -1,30 +1,37 @@
-   .body{
-    font-family: "Averia Libre", sans-serif; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #372775;
-    padding: 20px;
-   }
+  body {
+  font-family: "Averia Libre", sans-serif; 
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #372775;
+  }
 
    .roothome{
+    padding: 0% 5% 0% 5%;
     background-color: #372775;
-    height: 800px ;    
-      
+    height: 100vh ;    
+    border: none;  
     }
-     
+    
+    .divpesquisa{
+    background-color: #372775;
+    height: 100vh ;    
+    border: none; 
+    height: 30%; 
+    } 
 
     #pesquisa{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 15%;
+    height: 35px;
+    border-radius: 1px;
+    border: none;
+}
     
-    }
 
     #txtBusca{
     float:left;
@@ -42,17 +49,83 @@
    background-color: #49B976;
    color: #fff;
    border: none;
-    border-radius: 10px;
+   border-radius: 10px;
+   margin-left: auto;
+   cursor: pointer;
+   width: 134px;
+   height: 40px;
+   float: right;
+   font-size: 18px;
+  }
+
+  .sair {
+    display: flex;
+    font-family: "Averia Libre", sans-serif;
+    color: #3F92C5;
     margin-left: auto;
-    cursor: pointer;
-    margin-top: top;
     width: 134px;
     height: 40px;
     float: right;
     font-size: 18px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+  .meio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch ;
+    background-color: #372775;
+    width: 100%;
+    height: 50%;
   }
 
-.Quadrados{
-  display: flex;
-  background-color: #fff;
+  .c1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+      
+  .container{
+    margin: 10px;
+  }
+
+  .iconc1{
+    color: #000;
+  }
+
+  .iconc1:hover{
+    color: #372775;
+  }
+
+  .input-icons i {
+    position: absolute;
+}
+ 
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+ 
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
 }
