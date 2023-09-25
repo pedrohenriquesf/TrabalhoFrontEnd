@@ -1,0 +1,104 @@
+body {
+    font-family: "Averia Libre", sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #372775;
+}
+
+.rootcoleta {
+    padding: 0% 5% 0% 5%;
+    background-color: #372775;
+    height: 100vh;
+    border: none;
+}
+
+.containersair{
+    margin: 10px;
+}
+
+.sair{
+    display: flex;
+    font-family: "Averia Libre", sans-serif;
+    color: #3F92C5;
+    margin-left: auto;
+    width: 134px;
+    height: 40px;
+    float: right;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+
+.meio{
+    display: flex;
+    font-family: "Averia Libre", sans-serif;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 21px;
+    background-color: #372775;
+    width: 100%;
+    height: 40%;
+}
+
+.corbranca{
+    font-family: "Averia Libre", sans-serif;
+    color:#ffff
+}
+
+.corverde{
+    color:#37BD6D;
+
+}
+
+.corvermelha{
+    color:#ff0000
+}
+
+.corlaranja{
+    color: #FF360A
+}
+
+.coramarela{
+    color: #FFC632;
+
+}
+
+.corvermelhoescura{
+    color: #D71616;
+}
+
+.emojis{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    font-family: "Averia Libre", sans-serif;
+    background-color: #372775;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+.containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #372775;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
