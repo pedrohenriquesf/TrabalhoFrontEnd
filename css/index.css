@@ -8,7 +8,13 @@ body {
     min-height: 100vh;
     background-color: #372775;
   }
-
+  
+  .logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+   
   .login-container {
     background-color: #372775;
     border: 1px solid #737373;
@@ -17,7 +23,7 @@ body {
     width: 488px;
     height: 455px;
   }
-
+  
   .login-container h2 {
     margin-bottom: 20px;
     color:#fff; 
