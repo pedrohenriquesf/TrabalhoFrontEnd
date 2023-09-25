@@ -71,7 +71,7 @@
     height: 40px;
     float: right;
     font-size: 18px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     padding-left: 10px;
