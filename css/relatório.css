@@ -8,7 +8,7 @@ body {
     background-color: #372775;
     }
 
-.rootrelatorio{
+ .rootrelatorio{
     padding: 0% 5% 0% 5%;
     background-color: #372775;
     height: 100vh ;    
@@ -19,7 +19,7 @@ body {
     margin: 10px;
   }
 
-.sair {
+ .sair {
     display: flex;
     font-family: "Averia Libre", sans-serif;
     color: #3F92C5;
@@ -32,9 +32,9 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     padding-left: 10px;
-}
+ }
 
-.meio{
+ .meio{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -47,7 +47,7 @@ body {
     padding: 10%;
   }
 
-.ajustando{
+ .ajustando{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -57,7 +57,7 @@ body {
     height: 50%;
 }
 
-.gigantesco{
+ .gigantesco{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +71,7 @@ body {
     padding-top: 10px;
 
 }
-.indicadores{
+ .indicadores{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,13 +83,13 @@ body {
     margin: 5px;
     border-radius: 10px;
     padding-top: 10px;
-}
+ }
 
-.imagem{
+ .imagem{
     padding: 10px;
     min-width: 40px;
-}
+ }
 
-.corbranca{
+ .corbranca{
     color: #ffffff
-}
+ }
