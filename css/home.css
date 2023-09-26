@@ -1,7 +1,12 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   body {
   font-family: "Averia Libre", sans-serif; 
-  margin: 0;
-  padding: 0;
+
   justify-content: center;
   align-items: center;
   min-height: 100vh;

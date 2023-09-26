@@ -1,47 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Pesquisa</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NovaPesquisa</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap">
-  <link rel="stylesheet" href="./css/novaPesquisa.css">
-  <link rel="stylesheet" href="Assets/icon/favicon.ico">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap">
+    <link rel="stylesheet" href="./css/novaPesquisa.css">
+    <link rel="stylesheet" href="Assets/icon/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <img src="./Assets/icon/logo.svg" alt="logo Satisfying.you">
+        <a href="Index.html">Sair</a>
+    </header>
 
-<body>
+    <main>
+      <h1>Criar nova pesquisa de satisfação</h1>
 
-  <div class="logo">
-    <img class="img-logo" src="Assets/images/Group13.png" />
+      <form class="formulario" action="AcoesPesquisa.html">
+          <div class="form-group">
+            <label class="form-label" for="txtPesquisa">Nome da pesquisa</label>
+            <input type="text" class="form-input" name="nomePesquisa" id="txtPesquisa" value="Carnaval 2022" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="txtData">Data</label>
+            <input type="date" class="form-input" name="data" id="txtData" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="txtImagem">Imagem</label>
+            <div class="style-file">
+              <input type="text" class="form-input" name="imagem" id="txt" value="carnaval2022.png">
+              <input type="file" id="txtArquivo" class="style-input-file" name="arquivo">
+              <label for="txtArquivo" class="file-input">Escolher arquivo</label>
 
-  </div>
-
-  <div class="login-container">
-    <h2>Criar nova pesquisa de satisfação</h2>
-    <br>
-    <form>
-      <div class="form-group">
-        <label class="form-group label" for="Pesquisa">Pesquisa</label>
-        <input class="form-group input" type="text" id="Pesquisa" name="Pesquisa" required>
-      </div>
-      <div class="form-group">
-        <label class="form-group label" for="date">Data</label>
-        <input type="text" id="data" name="data">
-
-      </div>
-      <div class="form-group">
-        <label class="form-group label" for="date">Imagem</label>
-        <input class="form-group input" type="file" id="password" name="password" required>
-        <img src="Assets/images/image1M.png">
-        <button type="submit">Criar</button>
-      </div>
-
-
-    </form>
-  </div>
-
-
-</body>
-
-</html>
+            </div>
+            <img src="./Assets/images/image1M.png" alt="imagem da pesquisa">
+          </div>
+  
+        <div class="btn-criar">    
+            <button type="submit">Criar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+  </html>
