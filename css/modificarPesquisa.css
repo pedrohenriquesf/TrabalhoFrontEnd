@@ -1,91 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Averia Libre", sans-serif; 
-    margin: 0;
-    padding: 0;
+    background-color: #372775;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #372775;
   }
    
-  .logo{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .login-container {
-    background-color: #372775;
-    border: 1px solid #737373;
-    border-radius: 15px;
-    padding: 20px;
-    width: 488px;
-    height: 509px;
-  }
-  
-  .login-container h2 {
-    margin-bottom: 20px;
-    color:#fff; 
+header{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-  }
-  
-  .form-group {
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-  }
-  
-  .form-group label {
-    width: 126px;
-    height: 29;
-    display: flex;
-    margin-bottom: 5px;
-    color: #fff;
-    
-  }
-  
-  .form-group input {
-    width: 100%;
-    height: 3em;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  
-    
-  }
-  
-  .form-group a {
-    text-decoration: none;
-    color:#3F92C5;
-    text-align: right;
-    margin-left: auto;
-  }
-  
-  .form-group span {
-    
-    color: #FD7979;
-  
-  }
-  
-  
-  .form-group button  {
-    font-family: "Averia Libre", sans-serif;
-    background-color: #49B976;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    margin-left: auto;
-    cursor: pointer;
-    margin-top: 0px;
-    width: 134px;
-    height: 40px;
-    float: right;
-    font-size: 18px;
-  }
+    padding: 20px 20px 5px;
+}
+
+.botoes{
+  display: flex;
+  align-items: flex-start;
+}
+
+.apagar{
+  text-align: center;
+  margin-top: 0 auto;
+}
+
+.apagar img{
+  display: block;
+  margin: 0 auto;
+}
+
+.apagar span{
+  margin-top: 0px;
+  color: #f57f7f;
+  font-size: 14px;
+  font-family: "Averia Libre", sans-serif;
+  text-align: center;
+}
+
+#sair{
+  color: #3F92C5;
+  font-size: 20px;
+  text-decoration-line: underline;
+  margin-top: 0;
+}
+
+ main{
+  border: 1px solid #737373;
+  border-radius: 15px;
+  width: 500px;
+  height: 509px;
+  padding: 20px;
+  margin-top: 10px;
+ }
+
+ main h1{
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+.formulario{
+  position: relative;
+  top: 20px;
+}
+
+ .form-group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+ }
+
+ .form-label{
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 5px;
+ }
+
+ .form-input{
+  width: 100%;
+  height: 39px;
+  border: 1px solid #ccc;
+  font-family: Averia Libre;
+  color: #3F92C5;
+  font-size: 18px;
+  padding: 9px;
+ }
+
+ .form-group img{
+  width: 129px;
+  height: 129px;
+  margin-top: 5px;
+ }
+
+ .style-file{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 39px;
+  width: 100%;
+ }
+
+ .style-input-file{
+  display: none;
+ }
+
+ .file-input{
+  background-color: #88928c;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+ }
+
+ .btn-criar{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 25px;
+ }
+
+ .btn-criar button{
+  font-family: "Averia Libre", sans-serif;
+  background-color: #49B976;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 134px;
+  height: 40px;
+  font-size: 18px;
+ }
+
+ .container-popup{
+  display: none;
+  width: 600px;
+  height: 595px;
+  padding: 171px 47px;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .popup{
+  background-color: #2B1F5C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  min-height: 100px;
+ }

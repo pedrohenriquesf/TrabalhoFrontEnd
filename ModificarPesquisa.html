@@ -4,43 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ModeificarPesquisa</title>
+  <title>Modificar Pesquisa</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap">
   <link rel="stylesheet" href="./css/modificarPesquisa.css">
   <link rel="stylesheet" href="Assets/icon/favicon.ico">
 </head>
 
 <body>
-
-  <div class="logo">
-    <img class="img-logo" src="Assets/images/Group13.png" />
-
-  </div>
-
-  <div class="login-container">
-    <h2>Atualize os dados da pesquisa</h2>
-    <br>
-    <form>
-      <div class="form-group">
-        <label class="form-group label" for="Pesquisa">Pesquisa</label>
-        <input class="form-group input" type="text" id="Pesquisa" name="Pesquisa" required>
+  <header>
+    <img src="./Assets/icon/logo.svg" alt="logo Satisfying.you">
+    <div class="botoes">
+      <div class="apagar">
+        <a href="Home.html">
+        <img src="./Assets/icon/apagar.svg" alt="icone de lixeira">
+        <span>Apagar</span>
+      </a>
       </div>
-      <div class="form-group">
-        <label class="form-group label" for="date">Data</label>
-        <input type="text" id="data" name="data">
+      <a href="Index.html" id="sair">Sair</a>
+    </div>   
+  </header>
 
-      </div>
-      <div class="form-group">
-        <label class="form-group label" for="date">Imagem</label>
-        <input class="form-group input" type="file" id="password" name="password" required>
-        <img src="Assets/images/image1M.png">
-        <button type="submit">Salvar</button>
-      </div>
+  <main>
+    <h1>Atualize os dados da pesquisa</h1>
 
+    <form class="formulario" action="Home.html">
+        <div class="form-group">
+          <label class="form-label" for="txtPesquisa">Nome da pesquisa</label>
+          <input type="text" class="form-input" name="nomePesquisa" id="txtPesquisa" value="Carnaval 2024" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="txtData">Data</label>
+          <input type="date" class="form-input" name="data" id="txtData" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="txtImagem">Imagem</label>
+          <div class="style-file">
+            <input type="text" class="form-input" name="imagem" id="txt" value="carnaval.png">
+            <input type="file" id="txtArquivo" class="style-input-file" name="arquivo">
+            <label for="txtArquivo" class="file-input">Escolher arquivo</label>
+
+          </div>
+          <img src="./Assets/images/image1M.png" alt="imagem da pesquisa">
+        </div>
+
+      <div class="btn-criar">    
+          <button type="submit">Salvar</button>
+      </div>
     </form>
+  </main>
+
+  <div class="container-popup">
+    <div class="popup">
+      <span>Tem certeza de apagar essa pesquisa?</span>
+      <div class="btn-popup">
+        <button id="btn-Sim">Sim</button>
+        <button id="btn-Nao">Cancelar</button>
+      </div>
+    </div>
   </div>
-
-
 </body>
-
 </html>
