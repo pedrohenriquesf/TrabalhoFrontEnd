@@ -73,10 +73,7 @@ body {
 }
  .indicadores{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
+    flex-direction: row;
     background-color: #372775;
     width: 50%;
     height: auto;
