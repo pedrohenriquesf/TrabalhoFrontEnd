@@ -74,18 +74,28 @@ body {
 
 }
 
+.link{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+}
 
-.form-group button  {
-  font-family: "Averia Libre", sans-serif;
+.form-group .criar {
   background-color: #49B976;
   color: #fff;
   border: none;
   border-radius: 10px;
   margin-left: auto;
   cursor: pointer;
-  margin-top: 0px;
+  margin-top: 10px;
   width: 134px;
   height: 40px;
   float: right;
   font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
