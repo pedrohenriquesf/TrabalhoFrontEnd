@@ -72,6 +72,8 @@ body {
     text-align: right;
     margin-left: auto;
   }
+  
+  
 
   .form-group span {
     
@@ -79,20 +81,41 @@ body {
 
   }
 
-  
-  .form-group button  {
-    font-family: "Averia Libre", sans-serif;
+  .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .form-group .criar {
+      text-decoration: underline;
+      float:left;
+      margin-left: 30px;
+      margin-top: 10px;
+      text-align:left;
+      font-size: 20px;
+      
+  }
+
+  .form-group .entrar {
+    
     background-color: #49B976;
     color: #fff;
     border: none;
     border-radius: 10px;
     margin-left: auto;
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 10px;
     width: 134px;
     height: 40px;
     float: right;
     font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
 
