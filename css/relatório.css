@@ -42,7 +42,7 @@ body {
     align-items: center;
     align-content: stretch ;
     background-color: #372775;
-    width: 100%;
+    width: 80%;
     height: 50%;
     padding: 10%;
   }
@@ -52,17 +52,17 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background-color: #372775;
     height: 50%;
 }
 
  .gigantesco{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    
     align-items: center;
-    align-content: stretch;
+   
     background-color: #372775;
     width: 50%;
     height: auto;
@@ -88,5 +88,10 @@ body {
  }
 
  .corbranca{
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     color: #ffffff
  }
