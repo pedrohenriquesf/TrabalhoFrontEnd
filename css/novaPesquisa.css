@@ -19,13 +19,13 @@ header{
     justify-content: space-between;
     width: 100%;
     padding: 20px 20px 5px;
+    margin-top: 0;
 }
 
 header a{
   color: #3F92C5;
   font-size: 20px;
   text-decoration-line: underline;
-  margin-top: 0;
 }
 
  main{
@@ -54,7 +54,7 @@ header a{
 }
 
  .form-group{
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +78,10 @@ header a{
   padding: 9px;
  }
 
+ .caixa{
+  width: 70%;
+ }
+
  .form-group img{
   width: 129px;
   height: 129px;
@@ -89,20 +93,23 @@ header a{
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  height: 39px;
   width: 100%;
+
+  
  }
 
- .style-input-file{
+ .input-file-invisivel{
   display: none;
  }
 
- .file-input{
+ .btn-escolher{
   background-color: #88928c;
   color: #fff;
+  text-align: center;
   padding: 5px;
+  height: 39px;
   cursor: pointer;
-  margin-left: 5px;
+  
  }
 
  .btn-criar{
@@ -121,5 +128,4 @@ header a{
   width: 134px;
   height: 40px;
   font-size: 18px;
-
  }
