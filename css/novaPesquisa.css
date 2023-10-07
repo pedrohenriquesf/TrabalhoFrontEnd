@@ -19,7 +19,6 @@ header{
     justify-content: space-between;
     width: 100%;
     padding: 20px 20px 5px;
-    margin-top: 0;
 }
 
 header a{
@@ -78,6 +77,10 @@ header a{
   padding: 9px;
  }
 
+ .form-input::placeholder{
+  color: #3F92C5;
+ }
+
  .caixa{
   width: 70%;
  }
@@ -94,8 +97,6 @@ header a{
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-
-  
  }
 
  .input-file-invisivel{
@@ -106,10 +107,9 @@ header a{
   background-color: #88928c;
   color: #fff;
   text-align: center;
+  line-height: 30px;
   padding: 5px;
-  height: 39px;
   cursor: pointer;
-  
  }
 
  .btn-criar{

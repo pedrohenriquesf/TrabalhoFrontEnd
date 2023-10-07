@@ -13,9 +13,10 @@
 <body>
   <header>
     <img src="./Assets/icon/logo.svg" alt="logo Satisfying.you">
+
     <div class="botoes">
       <div class="apagar">
-        <a href="./PopUp.html">
+        <a href="#popupAtivo" id="btnApagar">
         <img src="./Assets/icon/apagar.svg" alt="icone de lixeira">
         <span>Apagar</span>
       </a>
@@ -30,7 +31,7 @@
     <form class="formulario" action="Home.html">
         <div class="form-group">
           <label class="form-label" for="txtPesquisa">Nome da pesquisa</label>
-          <input type="text" class="form-input" name="nomePesquisa" id="txtPesquisa" value="Carnaval 2024" required>
+          <input type="text" class="form-input" name="nomePesquisa" id="txtPesquisa" placeholder="Carnaval 2024" required>
         </div>
         <div class="form-group">
           <label class="form-label" for="txtData">Data</label>
@@ -39,11 +40,11 @@
         <div class="form-group">
           <label class="form-label" for="txtImagem">Imagem</label>
           <div class="style-file">
-            <input type="text" class="form-input" name="imagem" id="txt" value="carnaval.png">
-            <input type="file" id="txtArquivo" class="style-input-file" name="arquivo">
-            <label for="txtArquivo" class="file-input">Escolher arquivo</label>
-
+            <input type="text" class="form-input caixa" name="imagem" id="txt" placeholder="carnaval.png">
+            <input type="file" id="txtArquivo" class="input-file-invisivel" name="arquivo" accept="image/png, image/jpeg">
+            <label for="txtArquivo" class="btn-escolher">Escolher arquivo</label>
           </div>
+
           <img src="./Assets/images/image1M.png" alt="imagem da pesquisa">
         </div>
 
@@ -53,14 +54,16 @@
     </form>
   </main>
 
-  <div class="container-popup">
+  <div class="container-popup" id="popupAtivo">
     <div class="popup">
       <span>Tem certeza de apagar essa pesquisa?</span>
       <div class="btn-popup">
-        <button id="btn-Sim">Sim</button>
-        <button id="btn-Nao">Cancelar</button>
+        <a href="./Home.html"><button class="btn-Sim">Sim</button></a>
+        <!--o href do botão "Cancelar" funciona como um link vazio e fecha o popup usando a pseudo-classe :target-->
+        <a href="#"><button class="btn-Nao">Cancelar</button></a>
       </div>
     </div>
   </div>
+
 </body>
 </html>

@@ -24,6 +24,8 @@ header{
 .botoes{
   display: flex;
   align-items: flex-start;
+  position: relative;
+  top: 9px;
 }
 
 .apagar{
@@ -101,6 +103,14 @@ header{
   padding: 9px;
  }
 
+ .form-input::placeholder{
+  color: #3F92C5;
+ }
+
+ .caixa{
+  width: 70%;
+ }
+
  .form-group img{
   width: 129px;
   height: 129px;
@@ -112,20 +122,20 @@ header{
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  height: 39px;
   width: 100%;
  }
 
- .style-input-file{
+ .input-file-invisivel{
   display: none;
  }
 
- .file-input{
+ .btn-escolher{
   background-color: #88928c;
   color: #fff;
+  text-align: center;
+  line-height: 30px;
   padding: 5px;
   cursor: pointer;
-  margin-left: 5px;
  }
 
  .btn-criar{
@@ -146,21 +156,74 @@ header{
   font-size: 18px;
  }
 
- .container-popup{
-  display: none;
-  width: 600px;
-  height: 595px;
+ /* Estilo do popup*/
+ .container-popup {
+  display: none;  /* torna o popup invisivel*/
+  width: 100%;
+  height: 100%;
   padding: 171px 47px;
-  position: fixed;
   justify-content: center;
   align-items: center;
- }
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
- .popup{
-  background-color: #2B1F5C;
+.container-popup:target{
+  display: flex;
+}
+/* fecha o popup*/
+#popupAtivo:target{
+  display: block;
+}
+
+.popup {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 300px;
-  min-height: 100px;
- }
+  position: fixed;
+  left: 50%; /*centraliza horizontalmente*/
+  transform: translateX(-50%); /*alinha ao centro horizontalmente*/
+  min-height: 150px;
+  padding: 30px;
+  background-color: #2B1F5C;
+  color: #ffffff;
+  font-family: "Averia Libre";
+}
+
+.popup span{
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+  width: 403px;
+  height: 73px;
+}
+
+.btn-popup{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  margin-top: 15px;
+}
+
+.btn-popup button{
+  color: #ffffff;
+  font-family: "Averia Libre";
+  font-size: 30px;
+  font-weight: 400;
+  border: none;
+  width: 150px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.btn-Sim{
+  background-color: #FF8383;
+}
+
+.btn-Nao{
+  background-color: #3F92C5;
+}
