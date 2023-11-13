@@ -17,7 +17,7 @@ function confereSenha() {
         password2.setCustomValidity('');
         return true;
     } else {
-        password2.setCustomValidity('As senhas não conferem');
+        password2.setCustomValidity(' Senhas não conferem');
         return false;
     }
 }
