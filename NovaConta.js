@@ -2,22 +2,24 @@ const form = document.getElementById('form');
 const email = document.getElementById('email')  
 const password = document.getElementById('password')  
 const password2 = document.getElementById('password2') 
+const btncriar = document.getElementById('btncriar')
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    if (confereSenha()){
-        alert("Conta Criada com sucesso")
-        window.location.replace("Index.html")
+btncriar.addEventListener('click', function(event){
+    event.preventDefault()
+    if(confereSenha()){
+    window.localStorage.setItem('email',email.value)
+    window.localStorage.setItem('password',password.value)
+    window.location.replace('/Index.html')
     }
 })
 
+
+
+
+
 function confereSenha() {
-    if (password.value === password2.value){
-        password2.setCustomValidity('');
-        return true;
-    } else {
-        password2.setCustomValidity(' Senhas não conferem');
-        return false;
+    if(password.value == password2.value){
+        return true
     }
+        return false
 }
