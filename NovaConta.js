@@ -19,7 +19,7 @@ btncriar.addEventListener('click', function(event){
 
 function confereSenha() {
     if(password.value == password2.value){
-        return true
+        return true;
     }
         return false
 }
