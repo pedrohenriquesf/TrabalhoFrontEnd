@@ -7,8 +7,8 @@ const btnconfirma = document.getElementById('btnconfirma')
 btnconfirma.addEventListener('click', function(event){
     event.preventDefault()
     if(confereDados()){
-    window.localStorage.setItem('email', value)
-    window.localStorage.setItem('password', value)
+    window.localStorage.getItem('email', value)
+    window.localStorage.getItem('password', value)
     window.location.replace('/Home.html')
     }
 })
