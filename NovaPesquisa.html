@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap">
     <link rel="stylesheet" href="./css/novaPesquisa.css">
-    <link rel="stylesheet" href="Assets/icon/favicon.ico">
+    <link rel="icon" href="./Assets/icon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   </head>
   <body>
     <header>
@@ -18,10 +19,10 @@
     <main>
       <h1>Criar nova pesquisa de satisfação</h1>
 
-      <form class="formulario" action="./Home.html">
+      <form class="formulario" action="./Home.html" id="formAdicionar">
           <div class="form-group">
             <label class="form-label" for="txtPesquisa">Nome da pesquisa</label>
-            <input type="text" class="form-input" name="nomePesquisa" id="txtPesquisa" placeholder="Carnaval 2022" required>
+            <input type="text" class="form-input" name="nomePesquisa" id="txtPesquisa" placeholder="Nome da Pesquisa" required>
           </div>
           <div class="form-group">
             <label class="form-label" for="txtData">Data</label>
@@ -29,13 +30,27 @@
           </div>
           <div class="form-group">
             <label class="form-label" for="txtImagem">Imagem</label>
-            <div class="style-file">
-              <input type="text" class="form-input caixa" name="imagem" id="txt" placeholder="carnaval2022.png">
-              <input type="file" id="txtArquivo" class="input-file-invisivel" name="arquivo" accept="image/png, image/jpeg">
-              <label for="txtArquivo" class="btn-escolher">Escolher arquivo</label>
-            </div>
+            <select name="imagem" id="listaImagem" class="form-select">
+              <option value="fa-user">Pessoa</option>
+              <option value="fa-users">Pessoas</option>
+              <option value="fa-phone">Telefone</option>
+              <option value="fa-envelope">E-mail</option>
+              <option value="fa-music">Música</option>
+              <option value="fa-heart">Coração</option>
+              <option value="fa-laptop">Notebook</option>
+              <option value="fa-bomb">Bomba</option>
+              <option value="fa-cloud">Nuvem</option>
+              <option value="fa-bolt">Raio</option>
+              <option value="fa-ghost">Fantasma</option>
+              <option value="fa-mug-hot">Café</option>
+              <option value="fa-umbrella">Guarda-chuva</option>
+              <option value="fa-female">Mulher</option>
+              <option value="fa-male">Homem</option>
+            </select>
 
-            <img src="./Assets/images/image1M.png" alt="imagem da pesquisa">
+            <div>
+              <i id="exemploIcone" class="fa fa-3x fa-user"></i>
+            </div>
           </div>
   
         <div class="btn-criar">    
@@ -43,5 +58,8 @@
         </div>
       </form>
     </main>
+
+    <script src="NovaPesquisa.js"></script>
   </body>
   </html>
+  

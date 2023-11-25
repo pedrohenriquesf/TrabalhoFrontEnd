@@ -1,25 +1,40 @@
-const form = document.getElementById('form')
-const email = document.getElementById('E-mail')  
-const password = document.getElementById('password')  
-const password2 = document.getElementById('password2') 
 const btncriar = document.getElementById('btncriar')
 
-btncriar.addEventListener('click', function(event){
-    event.preventDefault()
-    if(confereSenha()){
-    window.localStorage.setItem('email', email.value)
-    window.localStorage.setItem('password', password.value)
-    window.location.replace('/Index.html')
+document.getElementById('criarConta').addEventListener('submit', function(event){
+        event.preventDefault(); // Não deixa executar a função padrão do formulário
+
+        let email = document.getElementById('E-mail').value;
+        let password = document.getElementById('password').value;
+        let password2 = document.getElementById('password2').value;
+
+        if(password === password2){
+            window.localStorage.setItem('email', email);
+            window.localStorage.setItem('password', password);
+            window.location.replace('/Index.html');
+        }
     }
-})
+)
 
+document.getElementById('password').addEventListener('keyup', function(event){
+        let password = document.getElementById('password').value;
+        let password2 = document.getElementById('password2').value;
 
-
-
-
-function confereSenha() {
-    if(password.value == password2.value){
-        return true;
+        if(password === password2){
+            document.getElementById('formError').style = "visibility: hidden;"
+        } else {
+            document.getElementById('formError').style = "visibility: visible;"
+        }
     }
-        return false
+)
+
+document.getElementById('password2').addEventListener('keyup', function(event){
+    let password = document.getElementById('password').value;
+    let password2 = document.getElementById('password2').value;
+
+    if(password === password2){
+        document.getElementById('formError').style = "visibility: hidden;"
+    } else {
+        document.getElementById('formError').style = "visibility: visible;"
+    }
 }
+)

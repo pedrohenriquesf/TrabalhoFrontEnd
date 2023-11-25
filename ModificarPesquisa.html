@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap">
   <link rel="stylesheet" href="./css/modificarPesquisa.css">
   <link rel="stylesheet" href="Assets/icon/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
   <main>
     <h1>Atualize os dados da pesquisa</h1>
 
-    <form class="formulario" action="Home.html">
+    <form class="formulario" action="Home.html" id="formModifica">
         <div class="form-group">
           <label class="form-label" for="txtPesquisa">Nome da pesquisa</label>
           <input type="text" class="form-input" name="nomePesquisa" id="txtPesquisa" placeholder="Carnaval 2024" required>
@@ -39,13 +40,27 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="txtImagem">Imagem</label>
-          <div class="style-file">
-            <input type="text" class="form-input caixa" name="imagem" id="txt" placeholder="carnaval.png">
-            <input type="file" id="txtArquivo" class="input-file-invisivel" name="arquivo" accept="image/png, image/jpeg">
-            <label for="txtArquivo" class="btn-escolher">Escolher arquivo</label>
-          </div>
+          <select name="imagem" id="listaImagem" class="form-select">
+            <option value="fa-user">Pessoa</option>
+            <option value="fa-users">Pessoas</option>
+            <option value="fa-phone">Telefone</option>
+            <option value="fa-envelope">E-mail</option>
+            <option value="fa-music">Música</option>
+            <option value="fa-heart">Coração</option>
+            <option value="fa-laptop">Notebook</option>
+            <option value="fa-bomb">Bomba</option>
+            <option value="fa-cloud">Nuvem</option>
+            <option value="fa-bolt">Raio</option>
+            <option value="fa-ghost">Fantasma</option>
+            <option value="fa-mug-hot">Café</option>
+            <option value="fa-umbrella">Guarda-chuva</option>
+            <option value="fa-female">Mulher</option>
+            <option value="fa-male">Homem</option>
+          </select>
 
-          <img src="./Assets/images/image1M.png" alt="imagem da pesquisa">
+          <div>
+            <i id="exemploIcone" class="fa fa-3x fa-user"></i>
+          </div>
         </div>
 
       <div class="btn-criar">    
@@ -58,12 +73,14 @@
     <div class="popup">
       <span>Tem certeza de apagar essa pesquisa?</span>
       <div class="btn-popup">
-        <a href="./Home.html"><button class="btn-Sim">Sim</button></a>
+        <a href="./Home.html"><button class="btn-Sim" id="botaoExcluir">Sim</button></a>
         <!--o href do botão "Cancelar" funciona como um link vazio e fecha o popup usando a pseudo-classe :target-->
         <a href="#"><button class="btn-Nao">Cancelar</button></a>
       </div>
     </div>
   </div>
+  <script src="ModificarPesquisa.js">
 
+  </script>
 </body>
 </html>

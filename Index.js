@@ -1,25 +1,24 @@
-const email = document.getElementById('E-mail')  
-const password = document.getElementById('password')
-const btnconfirma = document.getElementById('btnconfirma')
-
-
-
-btnconfirma.addEventListener('click', function(event){
-    event.preventDefault()
-    if(confereDados()){
-    window.localStorage.getItem('email', value)
-    window.localStorage.getItem('password', value)
-    window.location.replace('/Home.html')
+document.getElementById('formLogin').addEventListener('submit',
+    function(event){
+        event.preventDefault();
+        
+        if(confereDados()){
+            document.getElementById("formError").style = "visibility: hidden;"
+            window.location.replace('/Home.html');
+        } else {
+            document.getElementById("formError").style = "visibility: visible;"
+        }
     }
-})
+)
 
 
 
 function confereDados() {
-    if(email === localStorage && password === localStorage){
-       return true
-    }
-       return false 
+    const email = document.getElementById('E-mail').value;
+    const password = document.getElementById('password').value;
+    const localEmail = window.localStorage.getItem('email');
+    const localPassword = window.localStorage.getItem('password');
 
+    return email === localEmail && password === localPassword;
 
 }

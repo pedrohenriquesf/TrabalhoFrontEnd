@@ -22,10 +22,10 @@
         <h2>Criar uma Conta no Satisfying.you</h2>
         <br>
 
-        <form>
+        <form id="criarConta">
             <div class="form-group">
                 <label for="E-mail">E-mail</label>
-                <input type="text" id="E-mail" required>
+                <input type="email" id="E-mail" required>
             </div>
 
             <div class="form-group">
@@ -38,8 +38,8 @@
                 <input type="password" id="password2" name="password2" required>
             </div>
 
-            <div class="form-group">
-                <span>Senhas não conferem</span>
+            <div class="form-group" id="formError" style="visibility: hidden;">
+                <span>As senhas não conferem</span>
             </div>
 
             <div class="form-group">
