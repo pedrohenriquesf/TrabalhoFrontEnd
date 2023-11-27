@@ -31,7 +31,7 @@ function criarCard(id, nomeIcone, nomeCard, dataCard) {//Cria cada elemento e o 
     let data = document.createElement("p");
     data.textContent = dataCard;
 
-    divCard.appendChild(link);
+    divCard.appendChild(link);//Adiciona os link, nome e data na divCard
     divCard.appendChild(nome);
     divCard.appendChild(data);
 
@@ -61,8 +61,8 @@ function carregaPagina() {//pega os dados das pesquisas e ja carrega as padroes
             },
             {
                 "nomeIcone": "fa-umbrella",
-                "nomeCard": "Secomp 2023",
-                "dataCard": "10/10/2023"
+                "nomeCard": "COTB",
+                "dataCard": "01/04/2022"
             }
         ]);
 

@@ -12,7 +12,7 @@ document.getElementById('formLogin').addEventListener('submit',
 )
 
 
-
+//funcao de conferir os dados 
 function confereDados() {
     const email = document.getElementById('E-mail').value;
     const password = document.getElementById('password').value;

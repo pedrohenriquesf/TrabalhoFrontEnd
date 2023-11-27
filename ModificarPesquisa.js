@@ -8,7 +8,7 @@ document.getElementById('botaoExcluir').addEventListener('click', function(event
    event.preventDefault(); //impede o evento, esta impedindo o link
    
    let queryStrings = new URLSearchParams(window.location.search);
-   let index = queryStrings.get("id");
+   let index = queryStrings.get("id");// pega o id pela url
 
    let pesquisas = JSON.parse(window.localStorage.getItem('pesquisas')); //carregando array com as pesquisas
    pesquisas.splice(index, 1);//localiza o index e exclui a partir dele
@@ -37,11 +37,13 @@ document.getElementById('formModifica').addEventListener('submit', function(even
     let queryStrings = new URLSearchParams(window.location.search);
     let index = queryStrings.get("id");//posicao da matriz
 
+    //Atualiza as prorpiedades 
     pesquisas[index].nomeCard = document.getElementById('txtPesquisa').value;//Pega oq esta campo e passa para o array da pesquisa
     pesquisas[index].dataCard = new Date(document.getElementById('txtData').value).toLocaleDateString();
     pesquisas[index].nomeIcone = document.getElementById('listaImagem').value;
-    
-    window.localStorage.setItem('pesquisas', JSON.stringify(pesquisas));//
+
+    //está convertendo o array de volta para uma string e salva os dados
+    window.localStorage.setItem('pesquisas', JSON.stringify(pesquisas));
     window.location.replace('/Home.html');
 });
 
