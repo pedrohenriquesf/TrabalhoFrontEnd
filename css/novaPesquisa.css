@@ -122,7 +122,8 @@ header a{
   display: flex;
   justify-content: flex-end;
   position: relative;
-  bottom: 25px;
+  /*bottom: 5px;*/
+  margin-top: 5px;
  }
 
  .btn-criar button{
@@ -134,4 +135,5 @@ header a{
   width: 134px;
   height: 40px;
   font-size: 18px;
+  cursor: pointer;
  }
