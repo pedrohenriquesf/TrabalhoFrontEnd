@@ -92,13 +92,16 @@
 
   .meio{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /*flex-direction: row;
+    flex-wrap: nowrap;*/
+    flex-wrap: wrap;  /*Faz com que ao atingir 4 cards os próximos quebrem para a linha abaixo*/
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
     align-content: stretch;
     padding: 10px;
+    padding-right: 2px;
+    margin-left: 12px;
     width: 100%;
     height: 50%;
   }
@@ -115,14 +118,15 @@
     font-size: 23px;
     font-style: normal;
     font-weight: 400;
-    width: 100%;
+    /*width: 100%;*/
+    width: calc(25% - 30px);  /*Calcule a largura dos cards para caberem na tela e manter o espaçamento*/
     height: auto;
     margin: 5px 0;
     border-radius: 10px;
     padding: 60px;
 }
 
-.c1 p {
+.c1 p {      /*configurações da data*/
   color: #8B8B8B;
   text-align: center;
   font-family: "Averia Libre", sans-serif;
@@ -158,3 +162,33 @@
     padding: 10px;
     text-align: left;
 }
+
+@media (max-width: 500px) {
+  .meio{
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 1px;
+   padding-right: 10px;
+  }
+ 
+  .c1{
+   width: calc(50% - 25px);
+   margin: 5px; 
+   padding: 20px; 
+   font-size: 18px;
+  }
+
+.button, .sair{
+  width: calc(45% - 10px);
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.button{
+  width: 130px;
+  font-size: 18px;
+  position: relative;
+  left: 90px;
+}
+
+ }
