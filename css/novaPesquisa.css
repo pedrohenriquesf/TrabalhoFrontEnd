@@ -32,7 +32,7 @@ header a{
   border-radius: 15px;
   width: 500px;
   height: 509px;
-  padding: 20px;
+  padding: 20px 20px 5px;
   margin-top: 10px;
  }
 
@@ -50,10 +50,11 @@ header a{
 .formulario{
   position: relative;
   top: 20px;
+  height: 80%;
 }
 
  .form-group{
-  /*width: 100%;*/
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,9 +69,13 @@ header a{
  }
 
  .form-select{
-  color: #000000;
-  font-size: 20px;
+  color: #3F92C5;
+  border: 1px solid #ccc;
+  font-size: 19px;
+  padding: 5px;
   margin-bottom: 5px;
+  width: 50%;
+  height: 39px;
  }
 
  .form-input{
@@ -87,14 +92,12 @@ header a{
   color: #3F92C5;
  }
 
- .caixa{
-  width: 70%;
- }
-
- .form-group img{
+ #exemploIcone{   /* .form-group img   */
   width: 129px;
   height: 129px;
   margin-top: 5px;
+  font-size: 70px;
+  padding: 10px 15px;
  }
 
  .style-file{
@@ -122,8 +125,7 @@ header a{
   display: flex;
   justify-content: flex-end;
   position: relative;
-  /*bottom: 5px;*/
-  margin-top: 5px;
+  bottom: 25px;
  }
 
  .btn-criar button{

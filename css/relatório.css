@@ -1,97 +1,101 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 body {
-    font-family: "Averia Libre", sans-serif; 
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #372775;
-    }
-
- .rootrelatorio{
-    padding: 0% 5% 0% 5%;
-    background-color: #372775;
-    height: 100vh ;    
-    border: none;  
- }
-
- .container{
-    margin: 10px;
-  }
-
- .sair {
-    display: flex;
-    font-family: "Averia Libre", sans-serif;
-    color: #3F92C5;
-    margin-left: auto;
-    width: 134px;
-    height: 40px;
-    float: right;
-    font-size: 18px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding-left: 10px;
- }
-
- .meio{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: stretch ;
-    background-color: #372775;
-    width: 80%;
-    height: 50%;
-    padding: 10%;
-  }
-
- .ajustando{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: #372775;
-    height: 50%;
-}
-
- .gigantesco{
-    display: flex;
-    flex-direction: row;
-    
-    align-items: center;
-   
-    background-color: #372775;
-    width: 50%;
-    height: auto;
-    margin: 5px;
-    border-radius: 10px;
-    padding-top: 10px;
+   font-family: "Averia Libre", sans-serif; 
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #372775;
+   overflow-y: hidden; /* Oculta a barra de rolagem vertical */
 
 }
- .indicadores{
-    display: flex;
-    flex-direction: row;
-    background-color: #372775;
-    width: 50%;
-    height: auto;
-    margin: 5px;
-    border-radius: 10px;
-    padding-top: 10px;
- }
 
- .imagem{
-    padding: 10px;
-    min-width: 40px;
- }
+.rootRelatorio {
+   padding: 13px 24px;
+   height: 100vh;    
+   border: none;  
+}
 
- .corbranca{
-    display: flex;
-    color: #ffffff;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    color: #ffffff
- }
+.container {
+   margin: 5px;
+   display: flex;
+   justify-content: space-between; /* Distribui o espaço entre os elementos dentro do container */
+}
+
+.sair {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: nowrap;
+   font-family: "Averia Libre";
+   color: #3F92C5;
+   font-size: 20px;
+   text-decoration-line: underline;
+   height: 40px;
+   float: right;
+   margin: 3px 5px;
+}
+
+.meio {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: stretch;
+   width: 90%;
+   height: 90%;
+   position: relative;
+   left: 70px;
+   right: 40px;
+   padding-left: 60px;
+}
+
+.ajustando {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: flex-end;
+   /*height: 90%;*/
+}
+
+.gigantesco {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 50%;
+   height: auto;
+   margin: 5px;
+   border-radius: 10px;
+   padding-top: 10px;
+}
+
+.indicadores {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: auto;
+   margin: 0 5px;
+   border-radius: 10px;
+   padding-top: 0 5px;
+}
+
+.imagem {
+   padding: 10px;
+   min-width: 40px;
+}
+
+.corbranca {
+   display: flex;
+   color: #ffffff;
+   font-size: 30px;
+   font-style: normal;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+}
